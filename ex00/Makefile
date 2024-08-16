@@ -4,7 +4,9 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 SOURCE = main.cpp \
 		Animal.cpp \
 		Dog.cpp \
-		Cat.cpp
+		Cat.cpp \
+		WrongAnimal.cpp \
+		WrongCat.cpp
 OBJ_DIR = objs
 OBJS = $(addprefix $(OBJ_DIR)/, $(SOURCE:.cpp=.o))
 

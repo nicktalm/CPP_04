@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:29:12 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 10:30:31 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 10:52:07 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,13 @@
 Cat::Cat()
 {
 	std::cout << "Cat default constructor called" << std::endl;
-	Animal::type = "Cat";
-	type = "Default";
-}
-
-Cat::Cat(std::string srctype)
-{
-	std::cout << "Cat constructor with type called" << std::endl;
-	Animal::type = "Cat";
-	type = srctype;
+	type = "Cat";
 }
 
 Cat::Cat(Cat const & src) : Animal(src)
 {
 	std::cout << "Cat copy constructor called" << std::endl;
-	*this = src;
+	type = src.type;
 }
 
 // Destructor
@@ -47,10 +39,7 @@ Cat & Cat::operator=(Cat const & src)
 {
 	std::cout << "Cat assignemt operator called" << std::endl;
 	if (this != &src)
-	{
-		Animal::type = src.Animal::type;
 		type = src.type;
-	}
 	return (*this);
 }
 

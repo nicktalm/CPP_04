@@ -6,23 +6,40 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:32:14 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 10:35:49 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 11:35:45 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 #include "Dog.hpp"
+#include "WrongCat.hpp"
 
 int main()
 {
-const Animal* meta = new Animal();
-const Animal* j = new Dog();
-const Animal* i = new Cat();
+	Animal Nick;
+	Cat Tom;
+	Dog Spike;
+	WrongAnimal WrongAnimal;
+	WrongCat WrongCat;
 
-std::cout << j->getType() << " " << std::endl;
-std::cout << i->getType() << " " << std::endl;
-i->makeSound();
-j->makeSound();
-meta->makeSound();
-return 0;
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << std::endl;
+	
+	std::cout << "Nick: " << Nick.getType() << std::endl;
+	std::cout << "Tom: " << Tom.getType() << std::endl;
+	std::cout << "Spike: " << Spike.getType() << std::endl;
+	std::cout << "WrongAnimal: " << WrongAnimal.getType() << std::endl;
+	std::cout << "WrongCat: " << WrongCat.getType() << std::endl;
+	
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << std::endl;
+	
+	Nick.makeSound();
+	Tom.makeSound();
+	Spike.makeSound();
+	WrongAnimal.makeSound();
+	WrongCat.makeSound();
+	return (0);
 }

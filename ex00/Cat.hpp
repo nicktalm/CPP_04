@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:29:22 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 10:29:44 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 10:52:27 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,8 @@
 
 class Cat : public Animal
 {
-	private:
-		std::string type;
 	public:
 		Cat();
-		Cat(std::string srctype);
 		Cat(Cat const & src);
 		Cat & operator=(Cat const & src);
 		virtual ~Cat();
