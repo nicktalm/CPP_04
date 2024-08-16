@@ -1,51 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/14 15:43:31 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 10:25:00 by ntalmon          ###   ########.fr       */
+/*   Created: 2024/08/16 10:29:12 by ntalmon           #+#    #+#             */
+/*   Updated: 2024/08/16 10:30:31 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "Cat.hpp"
 
 // Constructor
 
-Dog::Dog()
+Cat::Cat()
 {
-	std::cout << "Dog default constructor called" << std::endl;
-	Animal::type = "Dog";
+	std::cout << "Cat default constructor called" << std::endl;
+	Animal::type = "Cat";
 	type = "Default";
 }
 
-Dog::Dog(std::string srctype)
+Cat::Cat(std::string srctype)
 {
-	std::cout << "Dog constructor with type called" << std::endl;
-	Animal::type = "Dog";
+	std::cout << "Cat constructor with type called" << std::endl;
+	Animal::type = "Cat";
 	type = srctype;
 }
 
-Dog::Dog(Dog const & src) : Animal(src)
+Cat::Cat(Cat const & src) : Animal(src)
 {
-	std::cout << "Dog copy constructor called" << std::endl;
+	std::cout << "Cat copy constructor called" << std::endl;
 	*this = src;
 }
 
 // Destructor
 
-Dog::~Dog()
+Cat::~Cat()
 {
-	std::cout << "Dog default destructor called" << std::endl;
+	std::cout << "Cat default destructor called" << std::endl;
 }
 
 // Operator
 
-Dog & Dog::operator=(Dog const & src)
+Cat & Cat::operator=(Cat const & src)
 {
-	std::cout << "Dog assignemt operator called" << std::endl;
+	std::cout << "Cat assignemt operator called" << std::endl;
 	if (this != &src)
 	{
 		Animal::type = src.Animal::type;
@@ -56,7 +56,7 @@ Dog & Dog::operator=(Dog const & src)
 
 // Member functions
 
-void Dog::makeSound() const
+void Cat::makeSound() const
 {
-	std::cout << "WOOOOF WOOOOF!" << std::endl;
+	std::cout << "MIAAAUU MIAAAUU!" << std::endl;
 }

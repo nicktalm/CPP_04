@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/14 15:43:39 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 10:21:36 by ntalmon          ###   ########.fr       */
+/*   Created: 2024/08/16 10:32:14 by ntalmon           #+#    #+#             */
+/*   Updated: 2024/08/16 10:35:49 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#include "Cat.hpp"
+#include "Dog.hpp"
 
-# include "Animal.hpp"
-
-class Dog : public Animal
+int main()
 {
-	private:
-		std::string type;
-	public:
-		Dog();
-		Dog(std::string srctype);
-		Dog(Dog const & src);
-		Dog & operator=(Dog const & src);
-		virtual ~Dog();
+const Animal* meta = new Animal();
+const Animal* j = new Dog();
+const Animal* i = new Cat();
 
-		void makeSound() const;
-};
-
-#endif
+std::cout << j->getType() << " " << std::endl;
+std::cout << i->getType() << " " << std::endl;
+i->makeSound();
+j->makeSound();
+meta->makeSound();
+return 0;
+}
