@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/14 15:23:51 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 16:52:39 by ntalmon          ###   ########.fr       */
+/*   Created: 2024/08/14 15:43:39 by ntalmon           #+#    #+#             */
+/*   Updated: 2024/08/16 16:57:11 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef DOG_HPP
+# define DOG_HPP
 
-# include <iostream>
+# include "NewAnimal.hpp"
+# include "Brain.hpp"
 
-class Animal
+class Dog : public NewAnimal
 {
-	protected:
-		std::string type;
+	private:
+		Brain *brain;
 	public:
-		Animal();
-		Animal(std::string type);
-		Animal(Animal const & src);
+		Dog();
+		Dog(Dog const & src);
+		Dog & operator=(Dog const & src);
+		virtual ~Dog();
 
-		Animal & operator=(Animal const & src);
+		void makeSound() const;
 
-		virtual ~Animal();
-
-		virtual void makeSound() const = 0;
-		std::string getType() const;
+		std::string getIdea(int index);
+		void setIdea(int index, std::string content);
 };
 
 #endif

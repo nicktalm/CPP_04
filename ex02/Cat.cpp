@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:29:12 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 14:26:39 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 17:05:38 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Cat::Cat()
 	type = "Cat";
 }
 
-Cat::Cat(Cat const & src) : Animal(src)
+Cat::Cat(Cat const & src) : NewAnimal(src)
 {
 	std::cout << "Cat copy constructor called" << std::endl;
 	brain = new Brain(*src.brain);

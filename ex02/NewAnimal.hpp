@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   NewAnimal.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 15:23:51 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 16:52:39 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 16:54:36 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef NEWANIMAL_HPP
+# define NEWANIMAL_HPP
 
 # include <iostream>
 
-class Animal
+class NewAnimal
 {
 	protected:
 		std::string type;
 	public:
-		Animal();
-		Animal(std::string type);
-		Animal(Animal const & src);
+		NewAnimal();
+		NewAnimal(std::string type);
+		NewAnimal(NewAnimal const & src);
 
-		Animal & operator=(Animal const & src);
+		NewAnimal & operator=(NewAnimal const & src);
 
-		virtual ~Animal();
+		virtual ~NewAnimal();
 
 		virtual void makeSound() const = 0;
 		std::string getType() const;

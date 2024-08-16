@@ -2,7 +2,7 @@ NAME = program
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 SOURCE = main.cpp \
-		Animal.cpp \
+		NewAnimal.cpp \
 		Dog.cpp \
 		Cat.cpp \
 		WrongAnimal.cpp \

@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:32:14 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 11:35:45 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 14:59:46 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 
 int main()
 {
-	Animal Nick;
+	
+Animal Nick;
 	Cat Tom;
 	Dog Spike;
 	WrongAnimal WrongAnimal;
 	WrongCat WrongCat;
-
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << std::endl;

@@ -6,12 +6,12 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:29:22 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 10:52:27 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 14:33:03 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Cat_HPP
-# define Cat_HPP
+#ifndef CAT_HPP
+# define CAT_HPP
 
 # include "Animal.hpp"
 

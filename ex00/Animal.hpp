@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 15:23:51 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/14 15:44:38 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 16:52:44 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,5 @@ class Animal
 		virtual void makeSound() const;
 		std::string getType() const;
 };
-
 
 #endif

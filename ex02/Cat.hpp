@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/14 15:23:51 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 16:52:39 by ntalmon          ###   ########.fr       */
+/*   Created: 2024/08/16 10:29:22 by ntalmon           #+#    #+#             */
+/*   Updated: 2024/08/16 17:05:21 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef CAT_HPP
+# define CAT_HPP
 
-# include <iostream>
+# include "NewAnimal.hpp"
+# include "Brain.hpp"
 
-class Animal
+class Cat : public NewAnimal
 {
-	protected:
-		std::string type;
+	private:
+		Brain *brain;
 	public:
-		Animal();
-		Animal(std::string type);
-		Animal(Animal const & src);
+		Cat();
+		Cat(Cat const & src);
+		Cat & operator=(Cat const & src);
+		virtual ~Cat();
 
-		Animal & operator=(Animal const & src);
+		void makeSound() const;
 
-		virtual ~Animal();
-
-		virtual void makeSound() const = 0;
-		std::string getType() const;
+		std::string getIdea(int index);
+		void setIdea(int index, std::string content);
 };
 
 #endif

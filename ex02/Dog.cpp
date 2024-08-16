@@ -1,46 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/16 10:29:12 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 14:26:39 by ntalmon          ###   ########.fr       */
+/*   Created: 2024/08/14 15:43:31 by ntalmon           #+#    #+#             */
+/*   Updated: 2024/08/16 16:57:22 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "Dog.hpp"
 
 // Constructor
 
-Cat::Cat()
+Dog::Dog()
 {
-	std::cout << "Cat default constructor called" << std::endl;
+	std::cout << "Dog default constructor called" << std::endl;
 	brain = new Brain();
-	type = "Cat";
+	type = "Dog";
 }
 
-Cat::Cat(Cat const & src) : Animal(src)
+Dog::Dog(Dog const & src) : NewAnimal(src)
 {
-	std::cout << "Cat copy constructor called" << std::endl;
+	std::cout << "Dog copy constructor called" << std::endl;
 	brain = new Brain(*src.brain);
 	type = src.type;
 }
 
 // Destructor
 
-Cat::~Cat()
+Dog::~Dog()
 {
 	delete brain;
-	std::cout << "Cat default destructor called" << std::endl;
+	std::cout << "Dog default destructor called" << std::endl;
 }
 
 // Operator
 
-Cat & Cat::operator=(Cat const & src)
+Dog & Dog::operator=(Dog const & src)
 {
-	std::cout << "Cat assignemt operator called" << std::endl;
+	std::cout << "Dog assignemt operator called" << std::endl;
 	if (this != &src)
 	{
 		if (brain)
@@ -53,19 +53,19 @@ Cat & Cat::operator=(Cat const & src)
 
 // Member functions
 
-void Cat::makeSound() const
+void Dog::makeSound() const
 {
-	std::cout << "MIAAAUU MIAAAUU!" << std::endl;
+	std::cout << "WOOOOF WOOOOF!" << std::endl;
 }
 
 // Getters and setters
 
-std::string Cat::getIdea(int index)
+std::string Dog::getIdea(int index)
 {
 	return (brain->getIdea(index));
 }
 
-void Cat::setIdea(int index, std::string content)
+void Dog::setIdea(int index, std::string content)
 {
 	brain->setIdea(index, content);
 }

@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:32:14 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 16:24:48 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/16 17:09:58 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@
 
 int main()
 {
+	// NewAnimal *Nick = new NewAnimal();
+
 	std::cout << "\033[1;31mTest create and fill an array of Animal objects\033[0m" << std::endl;
-	const Animal *j[8];
+	const NewAnimal *j[8];
 
 	for (int i = 0; i < 8; i++)
 	{
