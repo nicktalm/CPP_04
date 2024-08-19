@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 13:12:38 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/19 13:14:56 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/19 14:22:30 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Cure : public AMateria
 		Cure & operator=(Cure const & src);
 
 		AMateria* clone() const;
-		void use(ICharacter& target);
+		void use(ICharacter &target);
 };
 
 #endif

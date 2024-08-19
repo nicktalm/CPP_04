@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 13:20:06 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/19 13:21:00 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/19 14:22:34 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Ice : public AMateria
 		Ice & operator=(Ice const & src);
 
 		AMateria* clone() const;
-		void use(ICharacter& target);
+		void use(ICharacter &target);
 };
 
 #endif

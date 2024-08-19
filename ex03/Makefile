@@ -2,7 +2,11 @@ NAME = program
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 SOURCE = main.cpp \
-		AMateria.cpp
+		AMateria.cpp \
+		Cure.cpp \
+		Ice.cpp \
+		Character.cpp \
+		MateriaSource.cpp
 OBJ_DIR = objs
 OBJS = $(addprefix $(OBJ_DIR)/, $(SOURCE:.cpp=.o))
 
