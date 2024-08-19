@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 17:47:31 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/16 17:55:26 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/19 13:10:04 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,8 @@ std::string const & AMateria::getType() const
 	return (type);
 }
 
-// void AMateria::use(ICharacter& target)
-// {
-// 	(void)target;
-// 	std::cout << "AMateria use" << std::endl;
-// }
+void AMateria::use(ICharacter& target)
+{
+	(void)target;
+	std::cout << "AMateria use" << std::endl;
+}
