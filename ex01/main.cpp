@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:32:14 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/19 15:45:06 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/20 14:29:23 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,8 @@ int main()
 	Dog.setIdea(1, "I am a dog too");
 	Dog.setIdea(2, "I am a dog too too");
 
-	std::cout << Dog.getIdea(1) << std::endl;
 	std::cout << Dog.getIdea(0) << std::endl;
+	std::cout << Dog.getIdea(1) << std::endl;
 	std::cout << Dog.getIdea(2) << std::endl;
 
 	return (0);

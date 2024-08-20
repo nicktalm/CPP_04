@@ -6,7 +6,7 @@
 /*   By: ntalmon <ntalmon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:32:14 by ntalmon           #+#    #+#             */
-/*   Updated: 2024/08/19 16:00:00 by ntalmon          ###   ########.fr       */
+/*   Updated: 2024/08/20 13:05:32 by ntalmon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,10 @@ int main()
 	Spike.makeSound();
 	WrongAnimal.makeSound();
 	WrongCat.makeSound();
+
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << std::endl;
+	
 	return (0);
 }
